@@ -1065,10 +1065,10 @@
       <mask>gx1v7</mask>
     </model_grid>
 
-    <model_grid alias="mpasa15-3_mpasa15-3" not_compset="_POP">
-      <grid name="atm">mpasa15-3</grid>
-      <grid name="lnd">mpasa15-3</grid>
-      <grid name="ocnice">mpasa15-3</grid>
+    <model_grid alias="mpasa15-3-conus_mpasa15-3-conus" not_compset="_POP">
+      <grid name="atm">mpasa15-3-conus</grid>
+      <grid name="lnd">mpasa15-3-conus</grid>
+      <grid name="ocnice">mpasa15-3-conus</grid>
       <mask>gx1v7</mask>
     </model_grid>
 
@@ -1626,9 +1626,11 @@
       <nx>4096002</nx> <ny>1</ny>
       <desc>MPAS-A 12-km quasi-uniform mesh:</desc>
     </domain>
-    <domain name="mpasa15-3">
+    <domain name="mpasa15-3-conus">
       <nx>6488066</nx> <ny>1</ny>
-      <desc>MPAS-A 15-3-km variable-uniform mesh:</desc>
+      <file grid="atm|lnd" mask="gx1v7">$DIN_LOC_ROOT/share/domains/domain.lnd.mpasa15-3.conus_gx1v7.210611.nc</file>
+      <file grid="ocnice"  mask="gx1v7">$DIN_LOC_ROOT/share/domains/domain.ocn.mpasa15-3.conus_gx1v7.210611.nc</file>
+      <desc>MPAS-A 15-3-km variable-uniform mesh. The 3 km refinement is centered over -37.5, -100.0:</desc>
     </domain>
 
     <domain name="TL319">
