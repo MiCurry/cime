@@ -1088,6 +1088,13 @@
       <mask>gx1v7</mask>
     </model_grid>
 
+    <model_grid alias="mpasa3.75_mpasa3.75" not_compset="_POP">
+      <grid name="atm">mpasa3.75</grid>
+      <grid name="lnd">mpasa3.75</grid>
+      <grid name="ocnice">mpasa3.75</grid>
+      <mask>gx1v7</mask>
+    </model_grid>
+
     <!-- new runoff grids for data runoff model DROF -->
 
     <model_grid alias="T31_g37_rx1" compset="_DROF">
@@ -1617,14 +1624,17 @@
     </domain>
     <domain name="mpasa60">
       <nx>163842</nx> <ny>1</ny>
+      <mesh driver="nuopc">$DIN_LOC_ROOT/share/meshes/mpasa60_ESMFmesh-20210803.nc</mesh>
       <desc>MPAS-A 60-km quasi-uniform mesh:</desc>
     </domain>
     <domain name="mpasa30">
       <nx>655362</nx> <ny>1</ny>
+      <mesh driver="nuopc">$DIN_LOC_ROOT/share/meshes/mpasa30_ESMFmesh-20210803.nc</mesh>
       <desc>MPAS-A 30-km quasi-uniform mesh:</desc>
     </domain>
     <domain name="mpasa15">
       <nx>2621442</nx> <ny>1</ny>
+      <mesh driver="nuopc">$DIN_LOC_ROOT/share/meshes/mpasa15_ESMFmesh-20210803.nc</mesh>
       <desc>MPAS-A 15-km quasi-uniform mesh:</desc>
     </domain>
     <domain name="mpasa12">
@@ -1634,6 +1644,11 @@
     <domain name="mpasa15-3">
       <nx>6488066</nx> <ny>1</ny>
       <desc>MPAS-A 15-3-km variable-uniform mesh:</desc>
+    </domain>
+    <domain name="mpasa3.75">
+      <nx>41943042</nx> <ny>1</ny>
+      <mesh driver="nuopc">$DIN_LOC_ROOT/share/meshes/mpasa3.75_ESMFmesh-20210803.nc</mesh>
+      <desc>MPAS-A 3.75-km variable-uniform mesh:</desc>
     </domain>
 
     <domain name="TL319">
