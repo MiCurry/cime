@@ -1065,6 +1065,13 @@
       <mask>gx1v7</mask>
     </model_grid>
 
+    <model_grid alias="mpasa7.5_mpasa7.5" not_compset="_POP">
+      <grid name="atm">mpasa7.5</grid>
+      <grid name="lnd">mpasa7.5</grid>
+      <grid name="ocnice">mpasa7.5</grid>
+      <mask>gx1v7</mask>
+    </model_grid>
+
     <model_grid alias="mpasa15-3_mpasa15-3" not_compset="_POP">
       <grid name="atm">mpasa15-3</grid>
       <grid name="lnd">mpasa15-3</grid>
@@ -1624,6 +1631,11 @@
     <domain name="mpasa12">
       <nx>4096002</nx> <ny>1</ny>
       <desc>MPAS-A 12-km quasi-uniform mesh:</desc>
+    </domain>
+    <domain name="mpasa7.5">
+      <nx>10485762</nx> <ny>1</ny>
+      <desc>MPAS-A 7.5-km quasi-uniform mesh:</desc>
+      <mesh driver="nuopc">$DIN_LOC_ROOT/share/meshes/mpasa7.5_ESMFmesh-20210824.nc</mesh>
     </domain>
     <domain name="mpasa15-3">
       <nx>6488066</nx> <ny>1</ny>
