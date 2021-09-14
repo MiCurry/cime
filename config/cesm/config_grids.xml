@@ -1151,6 +1151,13 @@
       <mask>gx1v7</mask>
     </model_grid>
 
+    <model_grid alias="mpasa15-3-conus_mpasa15-3-conus" not_compset="_POP">
+      <grid name="atm">mpasa15-3</grid>
+      <grid name="lnd">mpasa15-3</grid>
+      <grid name="ocnice">mpasa15-3</grid>
+      <mask>gx1v7</mask>
+    </model_grid>
+
     <model_grid alias="mpasa3.75_mpasa3.75" not_compset="_POP">
       <grid name="atm">mpasa3.75</grid>
       <grid name="lnd">mpasa3.75</grid>
@@ -1712,6 +1719,10 @@
     <domain name="mpasa15-3">
       <nx>6488066</nx> <ny>1</ny>
       <desc>MPAS-A 15-3-km variable-uniform mesh:</desc>
+    </domain>
+    <domain name="mpasa15-3conus">
+      <nx>6488066</nx> <ny>1</ny>
+      <desc>MPAS-A 15-3-km variable-uniform mesh centered over CONUS:</desc>
     </domain>
     <domain name="mpasa3.75">
       <nx>41943042</nx> <ny>1</ny>
