@@ -1151,13 +1151,6 @@
       <mask>gx1v7</mask>
     </model_grid>
 
-    <model_grid alias="mpasa15-3_mpasa15-3" not_compset="_POP">
-      <grid name="atm">mpasa15-3</grid>
-      <grid name="lnd">mpasa15-3</grid>
-      <grid name="ocnice">mpasa15-3</grid>
-      <mask>gx1v7</mask>
-    </model_grid>
-
     <model_grid alias="mpasa15-3-conus_mpasa15-3-conus" not_compset="_POP">
       <grid name="atm">mpasa15-3</grid>
       <grid name="lnd">mpasa15-3</grid>
@@ -1692,10 +1685,12 @@
 
     <domain name="mpasa480">
       <nx>2562</nx> <ny>1</ny>
+      <mesh driver="nuopc">$DIN_LOC_ROOT/share/meshes/mpasa480_ESMFmesh-211109.nc</mesh>
       <desc>MPAS-A 480-km quasi-uniform mesh:</desc>
     </domain>
     <domain name="mpasa240">
       <nx>10242</nx> <ny>1</ny>
+      <mesh driver="nuopc">$DIN_LOC_ROOT/share/meshes/mpasa240_ESMFmesh-211115.nc</mesh>
       <desc>MPAS-A 240-km quasi-uniform mesh:</desc>
     </domain>
     <domain name="mpasa120">
@@ -1727,12 +1722,9 @@
       <mesh driver="nuopc">$DIN_LOC_ROOT/share/meshes/mpasa7.5_ESMFmesh-20210824.nc</mesh>
       <desc>MPAS-A 7.5-km quasi-uniform mesh:</desc>
     </domain>
-    <domain name="mpasa15-3">
-      <nx>6488066</nx> <ny>1</ny>
-      <desc>MPAS-A 15-3-km variable-uniform mesh:</desc>
-    </domain>
     <domain name="mpasa15-3conus">
       <nx>6488066</nx> <ny>1</ny>
+      <mesh driver="nuopc">$DIN_LOC_ROOT/share/meshes/mpasa15-3.conus_ESMF_desc.210816.nc</mesh>
       <desc>MPAS-A 15-3-km variable-uniform mesh centered over CONUS:</desc>
     </domain>
     <domain name="mpasa3.75">
