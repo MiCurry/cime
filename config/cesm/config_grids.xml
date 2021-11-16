@@ -1102,6 +1102,13 @@
       <mask>gx1v7</mask>
     </model_grid>
 
+    <model_grid alias="mpasa240_mpasa240" not_compset="_POP">
+      <grid name="atm">mpasa240</grid>
+      <grid name="lnd">mpasa240</grid>
+      <grid name="ocnice">mpasa240</grid>
+      <mask>gx1v7</mask>
+    </model_grid>
+
     <model_grid alias="mpasa120_mpasa120" not_compset="_POP">
       <grid name="atm">mpasa120</grid>
       <grid name="lnd">mpasa120</grid>
@@ -1686,6 +1693,10 @@
     <domain name="mpasa480">
       <nx>2562</nx> <ny>1</ny>
       <desc>MPAS-A 480-km quasi-uniform mesh:</desc>
+    </domain>
+    <domain name="mpasa240">
+      <nx>10242</nx> <ny>1</ny>
+      <desc>MPAS-A 240-km quasi-uniform mesh:</desc>
     </domain>
     <domain name="mpasa120">
       <nx>40962</nx> <ny>1</ny>
